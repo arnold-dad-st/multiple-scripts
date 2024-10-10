@@ -1,3 +1,6 @@
 console.log('Module 2 Is Loaded');
 
-window.moduleName = "MODULE_TWO";
+window.moduleNameTwo = "MODULE_TWO";
+
+// Value is set by module one
+console.log(window.moduleNameOne)
