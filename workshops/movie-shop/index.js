@@ -60,7 +60,6 @@ const onlineMovieStore = {
     this.movies.forEach(movie => {
       console.log(`Title: ${movie.name} Genre: ${movie.genre} Year: ${movie.year}`)
     })
-
   },
   getMovieById(id) { // : movie | undefined
     return this.movies.find(movie => movie.id === id);
@@ -79,23 +78,19 @@ const onlineMovieStore = {
     return undefined
   }
 };
-console.log(onlineMovieStore.movies);
 
-
+// console.log(onlineMovieStore.movies);
 // onlineMovieStore.movies // list of all movies
 // onlineMovieStore.getAllMovies() // title: string, genre: string, year:number
 // const movieById = onlineMovieStore.getMovieById(200) // by movie by id
 // console.log('movie-by-id: ', movieById)
 // const oldMovies = onlineMovieStore.getAllMoviesAfterYear(2008) // filter movies after year
 // console.log(oldMovies)
-onlineMovieStore.createNewMovie(parasite) // add new movie
+// onlineMovieStore.createNewMovie(parasite) // add new movie
 // onlineMovieStore.getAllMovies()
-console.log(onlineMovieStore.movies);
-
-
-onlineMovieStore.createNewMovie(madMax) // add new movie
-
-console.log(onlineMovieStore.movies);
+// console.log(onlineMovieStore.movies);
+// onlineMovieStore.createNewMovie(madMax) // add new movie
+// console.log(onlineMovieStore.movies);
 
 
 // console.log('shape:', onlineMovieStore);
